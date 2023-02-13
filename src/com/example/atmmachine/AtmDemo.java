@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class AtmDemo {
 
     public static void main(String[] args) {
-        Atm atmMachine = new Atm(10, 5, 7);
-        atmMachine.addMoney(3, 0, 2);
-        int[] testPositive1 = atmMachine.withdraw(140);
-        System.out.println("Was operation successful - " + Arrays.toString(testPositive1) + "\n");
-        int[] testPositive2 = atmMachine.withdraw(170);
-        System.out.println("Was operation successful - " + Arrays.toString(testPositive2) + "\n");
+        ATM atmMachine = new ATM();
+        atmMachine.deposit(new int[]{0, 0, 1, 2, 1});
+        int[] withdraw = atmMachine.withdraw(600);
+
+        System.out.println(Arrays.toString(withdraw));
     }
 }
