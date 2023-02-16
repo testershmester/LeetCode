@@ -1,4 +1,4 @@
-package com.example.two.pointers;
+package com.example.linked.list;
 
 /*
 
